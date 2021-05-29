@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+Simple project to search YuoTube videos and play them. 
+
+Note: After registering with Google, User need to provide YouTube API key in 'youtube.js' file under api folder. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
