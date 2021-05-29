@@ -1,28 +1,18 @@
 import React from 'react';
+import VideoItem from './VideoItem';
 
 const VideoList = ({videos}) => {
 
     const renderedVideos = videos.map(video => {
         return (
-            <div className="video-item item">
-                <img
-                    className="ui image"
-                    src={video.snippet.thumbnails.default.url}
-                    alt={video.snippet.title}
-                />
-                <div className="content">
-                    <div className="header">{video.snippet.title}</div>
-                </div>
-            </div>
+            <VideoItem key={video.id.videoId} video={video} />
         );
     })
 
-    return (
-        <div className="five wide column">
+    return (        
             <div className="ui aligned divided list">
                 {renderedVideos}
-            </div>
-        </div>
+            </div>        
     );
 };
 
